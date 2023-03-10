@@ -1,0 +1,155 @@
+/*
+Theme Name: Adika Theme
+Theme URI: adika.com
+Description: Latihan bikin theme
+Version: 1.0
+Author: Adika Ferdyans
+Author URI: http://example.com
+*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-image{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.699);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+nav{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+   
+}
+
+nav ul {
+    flex: 1;
+    text-align: end;
+    padding: 10px 7%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+nav ul li:hover{
+    color: red;
+}
+
+.judul{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.judul > h1{
+    color: white;
+    font-size: 4rem;
+   
+}
+
+.about{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(7, 7, 7);
+    padding: 0 7%;
+    gap: 50px;
+}
+
+.about .gambar{
+    flex: 50%;
+   
+}
+
+.gambar img{
+    height: 500px;
+    width: 600px;
+    border-radius: 10px;
+     
+}
+
+.about .deskripsi{
+    flex: 50%;
+
+   
+}
+
+.about .deskripsi h2{
+
+    font-size: 2rem;
+}
+.about .deskripsi p{
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 600px)
+{
+
+    .hero-image{
+        background-position: left;
+        background-attachment: scroll;
+    }
+    nav ul {
+        text-align: center;
+        padding: 10px 7%;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 10px 10px;
+    }
+    .judul{
+        padding: 15px;
+    }
+    .about{
+        flex-direction: column;
+        height: 100%;
+        padding: 50px 30px;
+        position: relative;
+        
+    }
+    .about .gambar{
+        flex: 1;
+       
+    }
+
+    .gambar img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .about .deskripsi{
+        flex: 1;
+    }
+}
